@@ -3,14 +3,13 @@ let userData;
 const inputBox = document.querySelector(".inputField input");
 const addButton = document.querySelector(".inputField button");
 const htmlToDoList = document.querySelector(".todoList");
-const totalTasks = document.querySelector(".footer .totalRecords")
-console.log(inputBox);
-console.log(totalTasks.textContent);
+const totalTasks = document.querySelector(".footer .totalRecords");
+
+checkExsiting();
 
 inputBox.onkeyup = () => {
     userData = inputBox.value.trim();
 }
-checkExsiting();
 
 function addDataToList() {
     if (userData.length != 0) {
