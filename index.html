@@ -15,18 +15,15 @@
         <header>Todo App</header>
         <div class="inputField">
             <input type="text" placeholder="Add your new task">
-            <button><i class="fas fa-plus"></i></button>
+            <button onclick="addDataToList()"><i class="fas fa-plus"></i></button>
         </div>
         
         <ul class="todoList">
-            <li>Buy a new Laptop<span><i class="fas fa-trash"></i></span></li>
-            <li>Buy a new Laptop<span><i class="fas fa-trash"></i></span></li>
-            <li>Buy a new Laptop<span><i class="fas fa-trash"></i></span></li>
-            <li>Buy a new Laptop<span><i class="fas fa-trash"></i></span></li>
+            <!-- Data will get fetch from Local Storage -->
         </ul>
         <div class="footer">
-            <span>You have 4 pending task</span>
-            <button>Clear All</button>
+            <span>You have <span class="totalRecords">0</span> pending task</span>
+            <button onclick="removeAllItem()">Clear All</button>
         </div>
     </div>
     
