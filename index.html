@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -15,7 +15,7 @@
         <header>Todo App</header>
         <div class="inputField">
             <input type="text" placeholder="Add your new task">
-            <button onclick="addDataToList()"><i class="fas fa-plus"></i></button>
+            <button name="addList" onclick="addDataToList()"><i class="fas fa-plus"></i></button>
         </div>
         
         <ul class="todoList">
@@ -23,7 +23,7 @@
         </ul>
         <div class="footer">
             <span>You have <span class="totalRecords">0</span> pending task</span>
-            <button onclick="removeAllItem()">Clear All</button>
+            <button name="Clear" onclick="removeAllItem()">Clear All</button>
         </div>
     </div>
     
