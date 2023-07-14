@@ -42,6 +42,7 @@ function checkExsiting() {
      showList();
  }
 
+// For storing data locally
  function setItem() {
     localStorage.setItem("allList", JSON.stringify(toDolists));
  }
